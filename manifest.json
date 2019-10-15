@@ -1,0 +1,14 @@
+{
+    "name": "Video Forward-Backward Seek",
+    "version": "0.7",
+    "description": "Brightcove chrome extension forward and backward seek",    
+    "content_scripts": [
+        {
+          "matches": ["https://www.your-websit-name.com/*"],          
+          "js": ["initScript.js"],
+          "run_at": "document_end"
+        }
+      ],
+      "web_accessible_resources": ["video-forward-backward-seek.js"],
+      "manifest_version": 2
+  }
