@@ -2,8 +2,6 @@
 A chrome extension for any website which uses brightcove video library player. It provides forward and backward seeking of video. Its a simple dom listener for key events and uses brightcove's library(currentTime and duration methods on videojs.getPlayers() object) to forward or backward seek a video being played. Chrome extensions content script is used for injecting script into desired website.
 
 
-One might need to change the player name set in brightcove. Here it is abcPlayer, replace it with your player name if required. 
-
 # Installation and usage 
 1. Download this. Update matches in content_scripts to site name containing brightcove player.
 2. Install this extension: 
@@ -13,6 +11,7 @@ One might need to change the player name set in brightcove. Here it is abcPlayer
 3. Navigate to your site playing video using brightcove player.
 4. Use forward arrow key to forward seek video by 5 seconds.
 5. Use backward arrow key to backward seek video by 5 seconds.
+NOTE: One might need to change the player name set in brightcove. Here it is abcPlayer, replace it with your player name if required. 
 
 # Advantages
 
@@ -30,5 +29,4 @@ One might need to change the player name set in brightcove. Here it is abcPlayer
 # TODO
 
 1. Add touch event listeners for mobile and touch screen devices. 
-
 2. Add icon when forward or backward seek is done.
