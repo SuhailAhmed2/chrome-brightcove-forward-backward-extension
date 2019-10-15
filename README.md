@@ -1,5 +1,5 @@
 # chrome-brightcove-forward-backward-extension
-A chrome extension for any website which uses brightcove video library player. It provides forward and backward seeking of video. Its a simple dom listener for key events and uses brightcove's library(currentTime and duration methods on videojs.getPlayers() object) to forward or backward seek a video being played. Chrome extensions background script is used for injecting script into desired website.
+A chrome extension for any website which uses brightcove video library player. It provides forward and backward seeking of video. Its a simple dom listener for key events and uses brightcove's library(currentTime and duration methods on videojs.getPlayers() object) to forward or backward seek a video being played. Chrome extensions content script is used for injecting script into desired website.
 
 
 One might need to change the player name set in brightcove. Here it is abcPlayer, replace it with your player name if required.
